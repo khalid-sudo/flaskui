@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Forecast Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <ul class="sidebar-icons">
+            <li><a href="#"><img src="{{ url_for('static', filename='icons/home.png') }}" alt="Home"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='icons/data.jpg') }}" alt="Data"></a></li>
+            <li><a href="#"><img src="{{ url_for('static', filename='icons/query.png') }}" alt="Query"></a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Anomaly detector</h1>
+            <div class="button-container">
+                <button id="new-section-btn" class="new-section">
+                    <span>+</span> New query, code, or markdown section
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <!-- This is where the forecast plot and components plot will be inserted -->
+            <div id="forecast-container" class="forecast-container hidden">
+                <h2>Forecast Result</h2>
+                <div class="plot-wrapper">
+                    <img id="forecast-plot" src="" alt="Forecast Plot" class="forecast-plot">
+                    <img id="components-plot" src="" alt="Components Plot" class="components-plot">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- First Modal Overlay for clicking outside to close -->
+<div id="modal-overlay" class="modal-overlay hidden"></div>
+
+<!-- First Modal Structure (for dataset selection) -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Select an option</h3>
+        <!-- Dataset options -->
+        <div class="modal-options">
+            <button id="local-btn" class="modal-option">Local</button>
+            <div id="local-choices-container" class="local-choices-container hidden">
+                <input type="text" id="search-bar" placeholder="Search files..." class="search-bar hidden">
+                <div id="local-choices" class="local-choices"></div>
+                <button id="see-more-btn" class="see-more hidden">See More</button>
+            </div>
+        </div>
+        <button id="close-modal" class="close-btn">Close</button>
+    </div>
+</div>
+
+<!-- Second Modal Structure (for dataset and column selection) -->
+<div id="dataset-modal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Choose a Column for Forecasting</h3>
+
+        <!-- Selected dataset information -->
+        <p>Selected dataset: <span id="selected-dataset"></span></p>
+
+        <!-- Column selection -->
+        <div id="column-selector-container" class="column-selector-container">
+            <select id="column-selector" class="column-selector"></select>
+        </div>
+
+        <!-- Quality Check Options -->
+        <h4>Choose Quality Check:</h4>
+        <div id="quality-check-container" class="quality-check-container">
+            <label>
+                <input type="radio" name="quality-check" value="null-check" checked>
+                Null Quality Check
+            </label>
+            <label>
+                <input type="radio" name="quality-check" value="volume-check">
+                Volume Check
+            </label>
+        </div>
+
+        <button id="confirm-selection" class="btn">Confirm</button>
+        <button id="close-dataset-modal" class="close-btn">Close</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/54d8f4869c0444c59c83793f895e2c37/artifacts
+end_time: 1729007559182
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 54d8f4869c0444c59c83793f895e2c37
+run_name: monumental-grouse-47
+run_uuid: 54d8f4869c0444c59c83793f895e2c37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729007505298
+status: 3
+tags: []
+user_id: khalid

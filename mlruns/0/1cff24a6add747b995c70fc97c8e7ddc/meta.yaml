@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/1cff24a6add747b995c70fc97c8e7ddc/artifacts
+end_time: 1729252411085
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1cff24a6add747b995c70fc97c8e7ddc
+run_name: mysterious-squid-38
+run_uuid: 1cff24a6add747b995c70fc97c8e7ddc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729252411062
+status: 3
+tags: []
+user_id: khalid

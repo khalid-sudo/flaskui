@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/e539d834fd274546b16f474e84ab6b15/artifacts
+end_time: 1729251892811
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e539d834fd274546b16f474e84ab6b15
+run_name: unique-kite-753
+run_uuid: e539d834fd274546b16f474e84ab6b15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729251892587
+status: 3
+tags: []
+user_id: khalid

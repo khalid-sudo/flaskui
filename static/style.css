@@ -1,0 +1,229 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+}
+
+/* Main container holding sidebar and content */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 80px;
+    background-color: #f3f4f6;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow to separate from the main content */
+}
+
+.sidebar-icons ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-icons li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Main content area */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #e5e7eb;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9fafb;
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* New section button */
+.new-section {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.new-section span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Modal styling */
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background: white;
+    padding: 20px;
+    width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Close button */
+.close-btn {
+    background-color: #ef4444;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Local options */
+.modal-options {
+    margin: 20px 0;
+}
+
+.modal-option, .choice {
+    padding: 10px;
+    background-color: #f3f4f6;
+    border: none;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999;
+    display: none;
+}
+
+.modal-overlay.visible {
+    display: block;
+}
+
+/* Local choices container */
+#local-choices-container {
+    position: fixed;
+    right: 20px;
+    top: 30%;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 250px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+/* Selection box for columns */
+.column-selector {
+    margin: 20px 0;
+}
+
+.column-selector label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.choice {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.choice:hover {
+    background-color: #ddd;
+}
+
+.search-bar {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.see-more {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.see-more.hidden {
+    display: none;
+}
+
+.forecast-container {
+    margin-top: 20px;
+}
+
+.plot-wrapper {
+    display: flex; /* Make the images align side by side */
+    justify-content: space-between; /* Add space between the images */
+    gap: 20px; /* Adjust the gap between the plots */
+}
+
+.forecast-plot, .components-plot {
+    width: 48%; /* Adjust the width to fit side by side */
+    height: auto; /* Maintain the aspect ratio */
+    border: 1px solid #ddd; /* Optional: Add a border around the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+.hidden {
+    display: none;
+}
+

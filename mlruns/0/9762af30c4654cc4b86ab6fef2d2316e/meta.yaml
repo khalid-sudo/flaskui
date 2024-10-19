@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/9762af30c4654cc4b86ab6fef2d2316e/artifacts
+end_time: 1729252357733
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9762af30c4654cc4b86ab6fef2d2316e
+run_name: classy-dog-64
+run_uuid: 9762af30c4654cc4b86ab6fef2d2316e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729252357714
+status: 3
+tags: []
+user_id: khalid

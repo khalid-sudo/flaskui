@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/38903b347cb44b2db57b5b513e6e0f5e/artifacts
+end_time: 1729252249717
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 38903b347cb44b2db57b5b513e6e0f5e
+run_name: stylish-calf-119
+run_uuid: 38903b347cb44b2db57b5b513e6e0f5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729252249698
+status: 3
+tags: []
+user_id: khalid

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/56ecaca3cc814cf89dd69251c43b5249/artifacts
+end_time: 1729252264554
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 56ecaca3cc814cf89dd69251c43b5249
+run_name: zealous-roo-89
+run_uuid: 56ecaca3cc814cf89dd69251c43b5249
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729252264537
+status: 3
+tags: []
+user_id: khalid

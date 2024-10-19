@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/58689435363f43018c4d6c4bef9fe738/artifacts
+end_time: 1729076852486
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 58689435363f43018c4d6c4bef9fe738
+run_name: dashing-crow-787
+run_uuid: 58689435363f43018c4d6c4bef9fe738
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729076503920
+status: 3
+tags: []
+user_id: khalid

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/khalid/IdeaProjects/flaskui/mlruns/0/ac4b9ee8767f41b285899a9453cd7386/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ac4b9ee8767f41b285899a9453cd7386
+run_name: abundant-slug-333
+run_uuid: ac4b9ee8767f41b285899a9453cd7386
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729007360785
+status: 1
+tags: []
+user_id: khalid
