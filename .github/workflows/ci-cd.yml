@@ -48,8 +48,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t your-dockerhub-username/your-image-name .
-          docker push your-dockerhub-username/your-image-name
+          docker build -t khalidsudo/flaskui-app -f docker/Dockerfile .
+          docker push khalidsudo/flaskui-app
 
       - name: Add SSH key
         uses: webfactory/ssh-agent@v0.5.3
@@ -59,5 +59,5 @@ jobs:
       - name: Deploy to server
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "
-          cd /path/to/your/project && docker-compose down && docker-compose pull && docker-compose up -d
+          cd  /root/flaskui/flaskui/docker && docker-compose down && docker-compose pull && docker-compose up -d
           "
