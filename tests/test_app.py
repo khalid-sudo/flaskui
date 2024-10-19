@@ -1,10 +1,14 @@
+# tests/test_app.py
+
 import pytest
-from api.routes import api_blueprint
 from flask import Flask
+from api.routes import api_blueprint
+import os
 
 @pytest.fixture
 def client():
-    app = Flask(__name__)
+    # Explicitly set the template folder path
+    app = Flask(__name__, template_folder='../templates')
     app.register_blueprint(api_blueprint, url_prefix="/")
     app.config['TESTING'] = True
     with app.test_client() as client:
