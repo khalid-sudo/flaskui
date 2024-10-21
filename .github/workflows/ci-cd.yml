@@ -48,7 +48,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t khalidsudo/flaskui-app -f docker/Dockerfile .
+          docker build -t khalidsudo/flaskui-app -f Dockerfile .
           docker push khalidsudo/flaskui-app
 
       - name: Add SSH key
